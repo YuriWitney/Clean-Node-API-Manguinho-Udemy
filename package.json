@@ -12,10 +12,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "lint-staged": { 
+    "*.ts": [
+      "eslint src/ --config ./.eslintrc.json --fix", 
+      "npm run test:staged"
+    ] 
   },
   "devDependencies": {
     "@types/jest": "^28.1.8",
