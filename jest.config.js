@@ -3,7 +3,7 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: [
     '<rootDir>/src/**/*.ts',
-    '!<rootDir>/src/**/protocols/'
+    '!<rootDir>/src/presentation/protocols/*.ts'
   ],
   coverageDirectory: 'coverage',
   coverageProvider: 'v8',
