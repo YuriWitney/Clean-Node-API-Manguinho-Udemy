@@ -14,7 +14,7 @@
   "license": "ISC",
   "lint-staged": { 
     "*.ts": [
-      "eslint src/ --config ./.eslintrc.json --fix", 
+      "eslint 'src/**' --fix", 
       "npm run test:staged"
     ] 
   },
