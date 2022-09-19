@@ -10,6 +10,14 @@ module.exports = {
   ],
   coverageDirectory: 'coverage',
   coverageProvider: 'v8',
+  coverageThreshold: {
+    global: {
+      branches: 90,
+      functions: 100,
+      lines: 100,
+      statements: 100,
+    },
+  },
   transform: {
     '.+\\.ts$': 'ts-jest'
   }
