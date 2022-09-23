@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --passWithNoTests --runInBand --noStackTrace",
-    "test:unit": "npm run test -- --watch -c jest-unit.config.js",
+    "test:unit": "npm run test  --findRelatedTests -- --watch -c jest-unit.config.js",
     "test:integration": "npm run test -- --watch -c jest-integration.config.js",
     "test:staged": "npm run test --findRelatedTests",
     "test:coverage": "npm run test -- --coverage",
@@ -22,6 +22,7 @@
     ]
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
     "@types/jest": "^28.1.8",
     "@types/node": "^18.7.13",
     "@types/validator": "^13.7.6",
@@ -39,6 +40,7 @@
     "typescript": "^4.8.2"
   },
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "validator": "^13.7.0"
   }
 }
