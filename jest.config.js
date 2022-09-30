@@ -8,7 +8,8 @@ module.exports = {
     '!<rootDir>/src/**/signUpProtocols.ts',
     '!<rootDir>/src/**/account.ts',
     '!<rootDir>/src/**/add-account.ts',
-    '!<rootDir>/src/**/db-add-account-protocols.ts'
+    '!<rootDir>/src/**/db-add-account-protocols.ts',
+    '!<rootDir>/src/main/server.ts'
   ],
   coverageDirectory: 'coverage',
   coverageProvider: 'v8',
