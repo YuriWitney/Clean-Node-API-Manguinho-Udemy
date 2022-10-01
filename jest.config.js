@@ -4,14 +4,12 @@ module.exports = {
   preset: '@shelf/jest-mongodb',
   collectCoverageFrom: [
     '<rootDir>/src/**/*.ts',
-    '!<rootDir>/src/**/protocols/*.ts',
-    '!<rootDir>/src/**/signUpProtocols.ts',
-    '!<rootDir>/src/**/account.ts',
-    '!<rootDir>/src/**/add-account.ts',
-    '!<rootDir>/src/**/db-add-account-protocols.ts'
+    '!<rootDir>/src/main/**',
+    '!<rootDir>/src/**/protocols/**',
+    '!<rootDir>/src/**/*rotocols.ts'
   ],
   coverageDirectory: 'coverage',
-  coverageProvider: 'v8',
+  coverageProvider: 'babel',
   coverageThreshold: {
     global: {
       branches: 100,
