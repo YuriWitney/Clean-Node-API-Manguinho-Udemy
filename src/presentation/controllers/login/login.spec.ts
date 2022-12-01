@@ -1,3 +1,4 @@
+import { MissingParamError } from '../../errors'
 import { badRequest } from '../../helpers/http-helper'
 import { HttpRequest } from '../../protocols'
 import { LoginController } from './login'
@@ -13,6 +14,6 @@ describe('Login Controller', () => {
 
     const httpResponse = await sut.handle(httpRequest)
 
-    expect(httpResponse).toBe(badRequest())
+    expect(httpResponse).toEqual(badRequest(new MissingParamError('email')))
   })
 })
